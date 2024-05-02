@@ -354,7 +354,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
 
   PRODUCT_COPY_FILES += \
-      $(LOCAL_PATH)/rootdir/etc/powerhint_blair.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+      $(LOCAL_PATH)/rootdir/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 # QMI
 PRODUCT_PACKAGES += \
