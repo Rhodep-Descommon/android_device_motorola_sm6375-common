@@ -418,9 +418,9 @@ PRODUCT_COPY_FILES += \
 
 # Thermal HAL
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0 \
-    android.hardware.thermal@2.0-service.qti-v2 \
+    android.hardware.thermal@1.0.vendor \
     android.hardware.thermal@2.0.vendor
+
 # Trusted UI
 PRODUCT_PACKAGES += \
     android.hidl.memory.block@1.0.vendor \
