@@ -24,3 +24,8 @@ allow vendor_init_fingerprint goodix_device:chr_file { getattr ioctl open read w
 allow vendor_init_fingerprint hal_fingerprint_default_exec:file execute_no_trans;
 allow vendor_init_fingerprint ctl_stop_prop:property_service set;
 allow vendor_init_fingerprint ctl_start_prop:property_service set;
+
+allow vendor_init_fingerprint proc_cmdline:file { getattr open read };
+allow vendor_init_fingerprint tee_device:chr_file { getattr setattr };
+allow vendor_init_fingerprint vendor_init_fingerprint:capability { chown fsetid };
+allow hal_fingerprint_default vendor_default_prop:property_service set;

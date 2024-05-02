@@ -8,6 +8,7 @@ BOARD_VENDOR := motorola
 
 COMMON_PATH := device/motorola/sm6375-common
 
+SELINUX_IGNORE_NEVERALLOWS := true
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
